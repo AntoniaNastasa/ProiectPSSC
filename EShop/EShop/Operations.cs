@@ -23,7 +23,7 @@ public class ComandaOperation
             var comanda = new Comanda
             {
                 ClientId = clientId,
-                ComandaProduse = produse.Select(p => new ComandaProdus
+                ComandaProduse = produse.Select(p => new ComandaProdus)
                 {
                     ProdusId = p.produsId,
                     Cantitate = p.cantitate
