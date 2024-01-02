@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EShop.Data.Models
 {
-    internal class Produs
+   public record Produs
     {
         public int produs_id { get; set; }
         public string nume { get; set; }
