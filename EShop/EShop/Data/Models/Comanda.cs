@@ -10,5 +10,7 @@ namespace EShop.Data.Models
     {
         public int comanda_id { get; set; }
         public int client_id { get; set; }
+        public Client Client { get; set; }
+        public List<ComandaProdus> ComandaProduse { get; set; }
     }
 }
