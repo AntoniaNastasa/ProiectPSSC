@@ -41,8 +41,11 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Models\Class1.cs" />
+    <Compile Include="Data\Models\ComandaProdus.cs" />
     <Compile Include="Data\Models\Produs.cs" />
     <Compile Include="Data\Models\Client.cs" />
     <Compile Include="Data\Models\Comanda.cs" />
