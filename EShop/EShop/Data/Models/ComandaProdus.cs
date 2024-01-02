@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EShop.Data.Models
 {
-    internal class ComandaProdus
+   public class ComandaProdus
     {
         public int comanda_produs_id { get; set; }
         public int comanda_id { get; set; }
