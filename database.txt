@@ -1,0 +1,37 @@
+*Produs*
+create table [dbo].[produs](
+[produs_id] [int] IDENTITY(1,1) NOT NULL,
+[nume] [varchar](15) NOT NULL,
+[pret] [decimal](5,2) NOT NULL,
+CONSTRAINT [PK_Produs] PRIMARY KEY CLUSTERED 
+(
+	[produs_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+
+*Client*
+create table [dbo].[client](
+[client_id] [int] IDENTITY(1,1) NOT NULL,
+[nume] [varchar](20) NOT NULL,
+[adresa] [varchar](20) NOT NULL,
+[telefon] [varchar](10) NOT NULL,
+CONSTRAINT [mail_client] PRIMARY KEY CLUSTERED)
+
+
+*extra
+Tabel Client- Produs(
+id client
+id produs
+)
+
+
+
+
+*Comanda*
+create table [dbo].[comanda](
+[comanda_id] [int] IDENTITY(1,1) NOT NULL,
+[mail_client] [varchar](15) NOT NULL,
+CONSTRAINT [Cod_comanda] PRIMARY KEY CLUSTERED)
