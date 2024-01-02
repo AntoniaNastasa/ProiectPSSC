@@ -44,16 +44,20 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\Models\Class1.cs" />
+    <Compile Include="Data\Models\Context.cs" />
     <Compile Include="Data\Models\ComandaProdus.cs" />
     <Compile Include="Data\Models\Produs.cs" />
     <Compile Include="Data\Models\Client.cs" />
     <Compile Include="Data\Models\Comanda.cs" />
+    <Compile Include="Domain\Operations\ComandaOperation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Domain\Workflows\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
